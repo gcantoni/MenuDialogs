@@ -6,8 +6,8 @@
 ## Custom dialogs available
 - Simple Dialog Menu
 - Rounded Dialog Menu
-- Rounded Colored Dialog Menu
-- Rounded Black Colored Dialog Menu
+- Rounded Colored Dialog Menu (Borders)
+- Rounded Colored Dialog Menu (Borders and background)
 
 ## Simple Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app1.png"/>
