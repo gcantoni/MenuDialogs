@@ -85,3 +85,8 @@ switch (which) {
 ```
 ## Rounded Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app2.png"/>
+
+## Rounded Colored Dialog Menu
+
+## Rounded Black Colored Menu
+
