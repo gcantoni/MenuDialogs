@@ -19,6 +19,14 @@
 
 ## Simple Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app1.png"/>
+First, create your dialog menu items and icons like it has been done<a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/MainActivity.java#L31">here.</a>
+
+```
+final String[] items = { string, string, string, string, ...};
+final Integer[] icons = new Integer[] {icon, icon, icon, icon, ...};
+
+// You can add how much texts and icons you want but you need to consider your users phones dpi
+```
 
 ## Rounded Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app2.png"/>
