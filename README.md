@@ -19,7 +19,7 @@
 
 ## Simple Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app1.png"/>
-First, create your dialog menu items and icons like it has been done<a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/MainActivity.java#L31">here.</a>
+- First, create your dialog menu items and icons like it has been done <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/MainActivity.java#L31">here.</a>
 
 ```
 final String[] items = { string, string, string, string, ...};
@@ -27,6 +27,12 @@ final Integer[] icons = new Integer[] {icon, icon, icon, icon, ...};
 
 // You can add how much texts and icons you want but you need to consider your users phones dpi
 ```
+- Create a new ListAdapter
+```
+ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
+```
+- Create a new class `DialogArrayAdapter` like <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/DialogArrayAdapter.java">this one.</a><br> Notice that this class extends ArrayAdapter class and in his constructor there is passed a stock Android framework layout. If you are planning to play with your dialog colors like background, we need to redefine this layout or the text of the various options will be broken. 
+
 
 ## Rounded Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app2.png"/>
