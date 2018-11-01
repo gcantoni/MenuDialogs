@@ -32,7 +32,7 @@ final Integer[] icons = new Integer[] {icon, icon, icon, icon, ...};
 ```
 ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
 ```
-- Create a new class `DialogArrayAdapter` like <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/DialogArrayAdapter.java">this one.</a><br> Notice that this class extends ArrayAdapter class and in his constructor there is passed an Android framework layout. If you are planning to play with your dialog colors like the background, we need to redefine this layout or the text of the various options will be broken. For preventing that, we have overwritten the ArrayAdapter constructor layout with <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/res/layout/dialog.xml">a new one</a> available under our app resources.
+- Create a new class `DialogArrayAdapter` like <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/DialogArrayAdapter.java">this one.</a><br> Notice that this class **extends ArrayAdapter** class and in his constructor there is passed an **Android framework layout**. If you are planning to play with your dialog colors like the background, we need to redefine this layout or the text of the various options will be broken. For preventing that, we have overwritten the ArrayAdapter constructor layout with <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/res/layout/dialog.xml">a new one</a> available under our app resources.
 ```
 public DialogArrayAdapter(Context context, String[] items, Integer[] images) {
         super(context, R.layout.dialog, items); // dialog is the layout interested
