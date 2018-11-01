@@ -8,6 +8,9 @@
   
 </p></i>
 
+## Download Sample
+ [<img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/google-play-badge.png" alt="Get it on Google Play" height="60">](https://play.google.com/store/apps/details?id=dialogmenu.folgore95.it.dialogmenu)[<img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/github.png" alt="Download APK from GitHub" height="60">](https://github.com/gcantoni/menudialogs/releases)
+
 ## Custom dialogs available
 - Simple Dialog Menu
 - Rounded Dialog Menu
