@@ -44,25 +44,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 // menu options
                 switch (which) {
-                    /**
+                    /*
                      * Option 0 - do something
                      */
                     case 0:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 1 - do something
                      */
                     case 1:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 2 - do something
                      */
                     case 2:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 3 - do something
                      */
                     case 3:
@@ -93,25 +93,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 // menu options
                 switch (which) {
-                    /**
+                    /*
                      * Option 0 - do something
                      */
                     case 0:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 1 - do something
                      */
                     case 1:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 2 - do something
                      */
                     case 2:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 3 - do something
                      */
                     case 3:
@@ -142,25 +142,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 // menu options
                 switch (which) {
-                    /**
+                    /*
                      * Option 0 - do something
                      */
                     case 0:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 1 - do something
                      */
                     case 1:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 2 - do something
                      */
                     case 2:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 3 - do something
                      */
                     case 3:
@@ -191,25 +191,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 // menu options
                 switch (which) {
-                    /**
+                    /*
                      * Option 0 - do something
                      */
                     case 0:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 1 - do something
                      */
                     case 1:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 2 - do something
                      */
                     case 2:
                         Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
                         break;
-                    /**
+                    /*
                      * Option 3 - do something
                      */
                     case 3:
