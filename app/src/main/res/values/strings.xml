@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Menu Dialogs</string>
+    <string name="menu">Menu Name</string>
+    <string name="menu0">Option 1</string>
+    <string name="menu1">Option 2</string>
+    <string name="menu2">Option 3</string>
+    <string name="menu3">Option 4</string>
+
+    <string name="example">Example</string>
+</resources>
