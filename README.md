@@ -59,6 +59,8 @@ builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                                                                    }
                                                                    }
+                                                                   
+// Creating the dialog interface
 ```
 
 - Inside onClick method create a switch with all of your options like it has been done <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/MainActivity.java#L44">here.</a>
