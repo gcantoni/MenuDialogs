@@ -19,6 +19,7 @@
 
 ## Simple Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app1.png"/>
+
 - First, create your dialog menu items and icons like it has been done <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/MainActivity.java#L31">here.</a>
 
 ```
@@ -27,12 +28,60 @@ final Integer[] icons = new Integer[] {icon, icon, icon, icon, ...};
 
 // You can add how much texts and icons you want but you need to consider your users phones dpi
 ```
-- Create a new ListAdapter
+- Create a new **ListAdapter**
 ```
 ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
 ```
-- Create a new class `DialogArrayAdapter` like <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/DialogArrayAdapter.java">this one.</a><br> Notice that this class extends ArrayAdapter class and in his constructor there is passed a stock Android framework layout. If you are planning to play with your dialog colors like background, we need to redefine this layout or the text of the various options will be broken. 
+- Create a new class `DialogArrayAdapter` like <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/DialogArrayAdapter.java">this one.</a><br> Notice that this class extends ArrayAdapter class and in his constructor there is passed an Android framework layout. If you are planning to play with your dialog colors like the background, we need to redefine this layout or the text of the various options will be broken. For preventing that we have overwritten the ArrayAdapter constructor layout with <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/res/layout/dialog.xml">a new one</a> available under our app resources.
+```
+public DialogArrayAdapter(Context context, String[] items, Integer[] images) {
+        super(context, R.layout.dialog, items); // dialog is the layout interested
+        this.images = Arrays.asList(images);
+    }
+```
+- In your principal class build a Dialog using **AlertDialog**
+```
+AlertDialog.Builder builder = new AlertDialog.Builder(this);
+```
 
+- If you want add options ( methods from AlertDialog)
+```
+builder.setTitle(string); // title
+builder.setIcon(icon); // icon
+builder.setCancelable(true);
 
+// options
+``` 
+
+- Now create the dialog interface
+```
+builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                                                                   }
+                                                                   }
+```
+
+- Inside onClick method create a switch with all of your options like it has been done <a href="https://github.com/gcantoni/MenuDialogs/blob/master/app/src/main/java/dialogmenu/folgore95/it/dialogmenu/MainActivity.java#L44">here.</a>
+```
+switch (which) {
+                    case 0:
+                        // Action
+                        break;
+                    
+                    case 1:
+                        // Action
+                        break;
+                    
+                    case 2:
+                        // Action
+                        break;
+                        
+                    case 3:
+                        // Action
+                        break;
+                }
+                
+// Menu options: they must follow the numbers of your icons and strings declared at the start as constants
+```
 ## Rounded Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app2.png"/>
