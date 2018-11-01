@@ -3,7 +3,8 @@
 <p align="center">Customize your Android apps dialogs easily!</p>
 <h3 align="center"><img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app0.png"/></h3>
 <i><p align="center">
-  Owner & Author: <a target="_blank" href="https://github.com/gcantoni">Giorgio Cantoni</a><br>
+  Author: <a target="_blank" href="https://github.com/gcantoni">Giorgio Cantoni</a><br>
+  Dialogs Resources: <a target="_blank" href="https://github.com/djdarkknight96">Bryan Owens</a><br>
   
 </p></i>
 
