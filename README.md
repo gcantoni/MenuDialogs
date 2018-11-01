@@ -82,6 +82,7 @@ switch (which) {
                 }
                 
 // Menu options: they must follow the numbers of your icons and strings declared at the start as constants
+// Action can be everything such as sending an email, open an installed app, show a toast and whatever you like
 ```
 ## Rounded Dialog Menu
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app2.png"/>
