@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomAppDialog">
+        <attr name="dialogCompoundIconColor" format="color|reference" />
+        <attr name="dialogBackgroundColor" format="color|reference" />
+        <attr name="dialogBorderColor" format="color|reference" />
+    </declare-styleable>
+</resources>
