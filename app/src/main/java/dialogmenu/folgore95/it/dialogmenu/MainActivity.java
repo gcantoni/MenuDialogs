@@ -4,8 +4,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.Toast;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public void simpleDialog(View view) {
         // images and texts for the menu
         final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final Integer[] icons = new Integer[] {R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon};
+        final int[] icons = new int[]{R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon};
 
         // we are calling DialogArrayAdapter constructor
         ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     public void roundedDialog(View view) {
         // images and texts for the menu
         final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final Integer[] icons = new Integer[] {R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon};
+        final int[] icons = new int[]{R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon};
 
         // we are calling DialogArrayAdapter constructor
         ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     public void roundedColoredDialog(View view) {
         // images and texts for the menu
         final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final Integer[] icons = new Integer[] {R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored};
+        final int[] icons = new int[]{R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored};
 
         // we are calling DialogArrayAdapter constructor
         ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
     public void roundedBlackColoredDialog(View view) {
         // images and texts for the menu
         final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final Integer[] icons = new Integer[] {R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored};
+        final int[] icons = new int[]{R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored};
 
         // we are calling DialogArrayAdapter second constructor
         ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), R.layout.dialogblack,items, icons);
