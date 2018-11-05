@@ -7,4 +7,9 @@
     <string name="menu3">Option 4</string>
 
     <string name="example">Example</string>
+    <string name="menu_simple_dialog_button">Simple Dialog Menu</string>
+    <string name="app_description">Customize your apps dialogs easily!</string>
+    <string name="menu_rounded_dialog_button">Rounded Dialog Menu</string>
+    <string name="menu_rounded_colored_dialog_button">Rounded Colored Dialog Menu</string>
+    <string name="menu_rounded_colored_dark_dialog_button">Rounded Black Colored Dialog Menu</string>
 </resources>
