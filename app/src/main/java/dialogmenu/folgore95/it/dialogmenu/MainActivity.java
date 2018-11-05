@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 /**
  * @author Cantoni Giorgio - giorgio.canto98@gmail.com on 31/10/18.
  */
@@ -24,15 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Simple Dialog Menu
-     * @param view
      */
     public void simpleDialog(View view) {
-        // images and texts for the menu
-        final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final int[] icons = new int[]{R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon};
+        final int style = R.style.AppTheme_Dialog_Simple;
 
-        // we are calling DialogArrayAdapter constructor
-        ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
+        ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         // options
@@ -76,18 +74,14 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Rounded Dialog Menu
-     * @param view
      */
     public void roundedDialog(View view) {
-        // images and texts for the menu
-        final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final int[] icons = new int[]{R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon, R.drawable.ic_menuicon};
+        final int style = R.style.AppTheme_Dialog_Rounded;
 
-        // we are calling DialogArrayAdapter constructor
-        ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
+        ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
         // NOTE: we are passing a style to the costructor of the dialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.RoundedDialog );
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, style);
 
         builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
@@ -125,18 +119,14 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Rounded Colored Dialog Menu
-     * @param view
      */
     public void roundedColoredDialog(View view) {
-        // images and texts for the menu
-        final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final int[] icons = new int[]{R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored};
+        final int style = R.style.AppTheme_Dialog_Rounded_Colored;
 
-        // we are calling DialogArrayAdapter constructor
-        ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), items, icons);
+        ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
         // NOTE: we are passing a style to the costructor of the dialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.RoundedColoredDialog );
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, style);
 
         builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
@@ -174,18 +164,14 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Rounded Black Colored Dialog Menu
-     * @param view
      */
     public void roundedBlackColoredDialog(View view) {
-        // images and texts for the menu
-        final String[] items = { getString(R.string.menu0), getString(R.string.menu1), getString(R.string.menu2), getString(R.string.menu3)};
-        final int[] icons = new int[]{R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored, R.drawable.ic_menuiconcolored};
+        final int style = R.style.AppTheme_Dialog_Rounded_Colored_Dark;
 
-        // we are calling DialogArrayAdapter second constructor
-        ListAdapter adapter = new DialogArrayAdapter(getApplicationContext(), R.layout.dialogblack,items, icons);
+        ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
         // NOTE: we are passing a style to the costructor of the dialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.RoundedBlackColoredDialog );
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, style);
 
         builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
@@ -223,11 +209,25 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Github Repo
-     * @param view
      */
     public void sourceCode(View view) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/gcantoni/MenuDialogs"));
         startActivity(browserIntent);
+    }
+
+    private String[] getDialogStrings() {
+        return new String[]{
+                getString(R.string.menu0),
+                getString(R.string.menu1),
+                getString(R.string.menu2),
+                getString(R.string.menu3)
+        };
+    }
+
+    private int[] getDialogIcons() {
+        int[] icons = new int[4];
+        Arrays.fill(icons, R.drawable.ic_menuicon);
+        return icons;
     }
 
 }
