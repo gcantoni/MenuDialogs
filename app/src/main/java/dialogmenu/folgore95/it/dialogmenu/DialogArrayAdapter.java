@@ -31,23 +31,10 @@ public class DialogArrayAdapter extends ArrayAdapter<String> {
         this.images = Arrays.asList(images);
     }
 
-    /**
-     * Second Constructor - used in Rounded Black Colored Dialog Menu
-     * It has a difference signature and a changed layout from the other constructor
-     * @param context
-     * @param layout
-     * @param items
-     * @param images
-     */
-    public DialogArrayAdapter(Context context, int layout, String[] items, Integer[] images) {
-        super(context,R.layout.dialogblack, items);
-        this.images = Arrays.asList(images);
-    }
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = super.getView(position, convertView, parent);
-        TextView textView = (TextView) view.findViewById(android.R.id.text1);
+        TextView textView = view.findViewById(android.R.id.text1);
 
         if (Build.VERSION.SDK_INT >= 24) {
             textView.setCompoundDrawablesRelativeWithIntrinsicBounds(images.get(position), 0, 0, 0);
