@@ -24,6 +24,7 @@
         <item name="dialogCompoundIconColor">@android:color/black</item>
         <item name="dialogBackgroundColor">@android:color/white</item>
         <item name="dialogBorderColor">@android:color/white</item>
+        <item name="textColorAlertDialogListItem">@android:color/black</item>
     </style>
 
     <!-- Rounded Colored Dialog Style -->
@@ -31,6 +32,7 @@
         <item name="dialogCompoundIconColor">@color/colorAccent</item>
         <item name="dialogBackgroundColor">@android:color/white</item>
         <item name="dialogBorderColor">@color/colorAccent</item>
+        <item name="textColorAlertDialogListItem">@android:color/black</item>
     </style>
 
     <!-- Rounded Black Colored Dialog Style -->
@@ -38,6 +40,7 @@
         <item name="dialogCompoundIconColor">@color/colorAccent</item>
         <item name="dialogBackgroundColor">@android:color/black</item>
         <item name="dialogBorderColor">@color/colorAccent</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
     </style>
 
 </resources>
