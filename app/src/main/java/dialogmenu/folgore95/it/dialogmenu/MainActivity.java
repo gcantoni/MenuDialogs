@@ -46,25 +46,25 @@ public class MainActivity extends AppCompatActivity {
                      * Option 0 - do something
                      */
                     case 0:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 1 - do something
                      */
                     case 1:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 2 - do something
                      */
                     case 2:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 3 - do something
                      */
                     case 3:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                 }
             }
@@ -91,25 +91,25 @@ public class MainActivity extends AppCompatActivity {
                      * Option 0 - do something
                      */
                     case 0:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 1 - do something
                      */
                     case 1:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 2 - do something
                      */
                     case 2:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 3 - do something
                      */
                     case 3:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                 }
             }
@@ -136,25 +136,25 @@ public class MainActivity extends AppCompatActivity {
                      * Option 0 - do something
                      */
                     case 0:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 1 - do something
                      */
                     case 1:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 2 - do something
                      */
                     case 2:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 3 - do something
                      */
                     case 3:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                 }
             }
@@ -181,30 +181,34 @@ public class MainActivity extends AppCompatActivity {
                      * Option 0 - do something
                      */
                     case 0:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 1 - do something
                      */
                     case 1:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 2 - do something
                      */
                     case 2:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                     /*
                      * Option 3 - do something
                      */
                     case 3:
-                        Toast.makeText(MainActivity.this, getString(R.string.example), Toast.LENGTH_SHORT).show();
+                        doSomething();
                         break;
                 }
             }
         });
         builder.create().show();
+    }
+
+    private void doSomething() {
+        Toast.makeText(this, getString(R.string.example), Toast.LENGTH_SHORT).show();
     }
 
     /**
