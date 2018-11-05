@@ -32,44 +32,42 @@ public class MainActivity extends AppCompatActivity {
 
         ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        // options
-        builder.setTitle(getString(R.string.menu)); // title
-        builder.setIcon(R.mipmap.ic_launcher); // icon
-        builder.setCancelable(true);
-
-        builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                // menu options
-                switch (which) {
-                    /*
-                     * Option 0 - do something
-                     */
-                    case 0:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 1 - do something
-                     */
-                    case 1:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 2 - do something
-                     */
-                    case 2:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 3 - do something
-                     */
-                    case 3:
-                        doSomething();
-                        break;
-                }
-            }
-        });
-        builder.create().show();
+        // AlertDialog with some options
+        new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.menu)) // title
+                .setIcon(R.mipmap.ic_launcher) // icon
+                .setCancelable(true)
+                .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // menu options
+                        switch (which) {
+                            /*
+                             * Option 0 - do something
+                             */
+                            case 0:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 1 - do something
+                             */
+                            case 1:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 2 - do something
+                             */
+                            case 2:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 3 - do something
+                             */
+                            case 3:
+                                doSomething();
+                                break;
+                        }
+                    }
+                }).show();
     }
 
     /**
@@ -80,41 +78,38 @@ public class MainActivity extends AppCompatActivity {
 
         ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
-        // NOTE: we are passing a style to the costructor of the dialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, style);
-
-        builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                // menu options
-                switch (which) {
-                    /*
-                     * Option 0 - do something
-                     */
-                    case 0:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 1 - do something
-                     */
-                    case 1:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 2 - do something
-                     */
-                    case 2:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 3 - do something
-                     */
-                    case 3:
-                        doSomething();
-                        break;
-                }
-            }
-        });
-        builder.create().show();
+        new AlertDialog.Builder(this, style)
+                .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // menu options
+                        switch (which) {
+                            /*
+                             * Option 0 - do something
+                             */
+                            case 0:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 1 - do something
+                             */
+                            case 1:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 2 - do something
+                             */
+                            case 2:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 3 - do something
+                             */
+                            case 3:
+                                doSomething();
+                                break;
+                        }
+                    }
+                }).show();
     }
 
     /**
@@ -126,40 +121,38 @@ public class MainActivity extends AppCompatActivity {
         ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
         // NOTE: we are passing a style to the costructor of the dialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, style);
-
-        builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                // menu options
-                switch (which) {
-                    /*
-                     * Option 0 - do something
-                     */
-                    case 0:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 1 - do something
-                     */
-                    case 1:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 2 - do something
-                     */
-                    case 2:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 3 - do something
-                     */
-                    case 3:
-                        doSomething();
-                        break;
-                }
-            }
-        });
-        builder.create().show();
+        new AlertDialog.Builder(this, style)
+                .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // menu options
+                        switch (which) {
+                            /*
+                             * Option 0 - do something
+                             */
+                            case 0:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 1 - do something
+                             */
+                            case 1:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 2 - do something
+                             */
+                            case 2:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 3 - do something
+                             */
+                            case 3:
+                                doSomething();
+                                break;
+                        }
+                    }
+                }).show();
     }
 
     /**
@@ -170,41 +163,38 @@ public class MainActivity extends AppCompatActivity {
 
         ListAdapter adapter = new DialogArrayAdapter(this, getDialogStrings(), getDialogIcons(), style);
 
-        // NOTE: we are passing a style to the costructor of the dialog
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, style);
-
-        builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                // menu options
-                switch (which) {
-                    /*
-                     * Option 0 - do something
-                     */
-                    case 0:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 1 - do something
-                     */
-                    case 1:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 2 - do something
-                     */
-                    case 2:
-                        doSomething();
-                        break;
-                    /*
-                     * Option 3 - do something
-                     */
-                    case 3:
-                        doSomething();
-                        break;
-                }
-            }
-        });
-        builder.create().show();
+        new AlertDialog.Builder(this, style)
+                .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // menu options
+                        switch (which) {
+                            /*
+                             * Option 0 - do something
+                             */
+                            case 0:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 1 - do something
+                             */
+                            case 1:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 2 - do something
+                             */
+                            case 2:
+                                doSomething();
+                                break;
+                            /*
+                             * Option 3 - do something
+                             */
+                            case 3:
+                                doSomething();
+                                break;
+                        }
+                    }
+                }).show();
     }
 
     private void doSomething() {
