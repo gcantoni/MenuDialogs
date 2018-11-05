@@ -76,7 +76,7 @@ public class DialogArrayAdapter extends ArrayAdapter<String> {
         compoundDrawable.setColorFilter(compoundDrawableColor, PorterDuff.Mode.SRC_ATOP);
 
         // Set the tinted drawable
-        if (Build.VERSION.SDK_INT >= 24) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             textView.setCompoundDrawablesRelativeWithIntrinsicBounds(compoundDrawable, null, null, null);
         } else {
             textView.setCompoundDrawablesWithIntrinsicBounds(compoundDrawable, null, null, null);
