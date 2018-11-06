@@ -90,8 +90,10 @@ switch (which) {
 <img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app2.png"/>
 
 ## Rounded Colored Dialog Menu
+<img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app3.png"/>
 
 ## Rounded Black Colored Menu
+<img src="https://raw.githubusercontent.com/gcantoni/MenuDialogs/master/images/app4.png"/>
 
 ## License
 ```
